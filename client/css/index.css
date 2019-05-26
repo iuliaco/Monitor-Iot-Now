@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #E8F1F2;
+}
+.logo{
+border-bottom: 0px!important;  
+}
+#menu{
+  display: flex;
+  align-items: center;
+  background-color: #084887!important;
+}
+#menu::after{
+content:"";
+flex:1;
+}
+.ant-menu-item-selected, .ant-menu-item-active{
+  color:white!important;
+  background-color: transparent!important;
+}
+.ant-menu-item-selected::after, .ant-menu-item-active::after,.ant-menu-item:after{
+border: 0px solid black!important;
+animation: none!important ;
+transition:none!important;
+}
+.ant-drawer-wrapper-body  .ant-menu-item-selected, .ant-drawer-wrapper-body  .ant-menu-item-active{
+  color: #084887!important;
+}
+
+/* span {
+  transform: skew(-10deg);
+  display: block;
+  float: left;
+  text-shadow:  #533d4a 1px 1px,  #533d4a 2px 2px,  #533d4a 3px 3px,  #533d4a 4px 4px,  #533d4a 5px 5px,  #533d4a 6px 6px;
+  min-width: 10px;
+  min-height: 10px;
+  position: relative;
+} */
+.title{
+  transform: skew(-10deg);
+  display: block;
+  text-shadow:  #533d4a 1px 1px,  #533d4a 2px 2px,  #533d4a 3px 3px,  #533d4a 4px 4px,  #533d4a 5px 5px,  #533d4a 6px 6px;
+  min-width: 10px;
+
+  min-height: 10px;
+  position: relative;}
+
+  .containerspecial{
+    /* transform: translate(-50%, -50%); */
+    top: 50%;
+    left: 50%;
+    display: block;
+    max-width: 94%;
+    min-height: 100px;
+  }
+  #root{
+    height: 100%;
+  }
+  .App{
+    height: 100%;
+  }
+.about{
+  background-image: url(https://static.makeuseof.com/wp-content/uploads/2015/03/arduino-projects-670x335.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    background-position: center;
+}
+.ant-card-cover{
+display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+.services{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.titl:before{
+  content: "blabla";
+  opacity: 0;
+flex: 1 1 auto;
+}
+
+.more{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DDE2C6;
+  flex-direction: column;
+}
+
+.visible{
+  display: block;
+}
+
+.notvisible{
+  display: none;
+}
